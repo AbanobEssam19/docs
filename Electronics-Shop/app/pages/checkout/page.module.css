@@ -1,0 +1,190 @@
+.main {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.inputCollection {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputCollection input {
+  padding: 10px;
+}
+.inputWrapper input {
+  padding: 10px;
+  height: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 0.1px solid rgba(0, 0, 0, 0.331);
+  outline: none;
+}
+.inputCollection input:focus,
+.inputWrapper input:focus {
+  border: 1px solid black;
+}
+.inputWrapper select {
+  outline: none;
+  height: 40px;
+  border: 0.1px solid black;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.formClass {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.order {
+  padding: 20px;
+  width: 40%;
+  height: fit-content;
+  border: 2px solid var(--main);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order tbody tr td:first-of-type {
+  width: 50%;
+}
+.order > * {
+  position: relative;
+}
+.order > table::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.237);
+  bottom: -10px;
+  left: 0;
+}
+
+.order > .group::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.237);
+  top: -10px;
+  left: 0;
+}
+/* .order h6:first-child::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.237);
+  bottom: -20px;
+  left: 0;
+} */
+.order table thead {
+  position: relative;
+}
+.order table thead::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.237);
+  bottom: -10px;
+  left: 0;
+}
+.order table thead tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.order table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order button {
+  background-color: var(--main);
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media (max-width: 997px) {
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formClass, .order {
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .inputCollection{
+    width: 60%;
+  }
+}
+
+.orderTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.orderHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.orderHeader p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.orderBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  gap: 20px;
+}
+
+.orderData {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.orderData p:first-of-type {
+  max-width: 60%;
+  overflow: hidden;
+}

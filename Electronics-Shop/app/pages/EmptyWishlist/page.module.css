@@ -1,0 +1,18 @@
+.emptyCart {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.emptyCart img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.emptyCart a {
+    color: var(--main);
+}

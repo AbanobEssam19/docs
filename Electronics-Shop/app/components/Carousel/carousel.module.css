@@ -1,0 +1,23 @@
+.parentCarousel {
+  height: 500px;
+  width: 650px;
+}
+.prevIcon,
+.nextIcon {
+  background-color: black !important;
+  border-radius: 100% !important;
+  padding: 20px !important;
+}
+
+.carouselInner,
+.carouselItem,
+.carouselItem img {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .parentCarousel {
+    width: 80vw;
+    height: 350px;
+  }
+}

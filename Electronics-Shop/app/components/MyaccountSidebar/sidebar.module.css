@@ -1,0 +1,15 @@
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 35px;
+}
+
+.SideBar a {
+    text-decoration: none;
+    color: rgb(103, 102, 102);
+}
+
+.SideBar a:hover {
+    color: rgb(0, 0, 0);
+}

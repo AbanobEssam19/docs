@@ -1,0 +1,99 @@
+
+.body {
+  background-color: #e9ecef; 
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+}
+
+
+.form_container {
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; 
+}
+
+
+.form_container h1 {
+  text-align: center; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+
+.options-panel {
+  margin-bottom: 20px; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #fff; 
+}
+
+
+.button {
+  padding: 10px 15px; 
+  margin: 5px; 
+  border: none; 
+  border-radius: 5px;
+  background-color: #ce9b1b; 
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.button:hover {
+  background-color: #584004; 
+}
+
+.selected {
+  background-color: #584004; 
+}
+
+
+.inputfield {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  font-size: 16px; 
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s; 
+}
+
+.inputfield:focus {
+  border-color: #ce9b1b; 
+}
+
+
+.label {
+  font-size: 16px; 
+  margin-right: 10px; 
+}
+
+
+.price {
+  font-weight: bold; 
+  font-size: 18px;
+  color: #333; 
+  margin: 10px 0; 
+}
+
+
+.submitbutton {
+  background-color: #ce9b1b; 
+  padding: 15px; 
+  font-size: 18px; 
+  transition: background-color 0.3s; 
+  border: none; 
+  border-radius: 5px; 
+  color: white; 
+  width: 100%; 
+}
+
+.submitbutton:hover {
+  background-color: #c88b06; 
+}

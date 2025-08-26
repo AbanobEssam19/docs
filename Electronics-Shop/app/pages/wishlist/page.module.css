@@ -1,0 +1,144 @@
+.main {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.main p {
+    margin: 0;
+}
+
+.main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.main th,
+.main td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.main th {
+    background-color: #f2f2f2;
+}
+
+.product_image {
+    width: 50px;
+    height: 50px;
+}
+
+.add_to_cart_button {
+    background-color: var(--main);
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.bom {
+    height: fit-content;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot {
+    background-color: var(--main);
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    border: none;
+
+}
+
+.ri {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.sco {
+    width: 50%;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.vn {
+    display: flex;
+    justify-content: end;
+}
+
+.state {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.state p,
+.state path {
+    color: #00a046;
+}
+
+
+.state2 {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.state2 p,
+.state2 path {
+    color: red;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .bot {
+        width: 40%;
+    }
+}
+
+@media (max-width: 490px) {
+    .stockStatus {
+        display: none;
+    }
+
+    .state, .state2 {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 444px) {
+    .tableHeadPhoto, .productImg {
+        display: none;
+    }
+
+    .main, .main button {
+        font-size: small;
+    }
+}

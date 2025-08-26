@@ -1,0 +1,167 @@
+.FirstRow {
+    border-bottom: 1px solid #e3e1e1 ;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.RightPart {
+    display: flex;
+    align-items: center;
+}
+
+.SideFilters {
+    display: none;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.SideFilters:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.SortIcon {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    min-width:130px;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+.FilterPart {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.Filterbtn {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px ;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.FilterSlider {
+    width: 285px;
+    margin-top: 20px; 
+}
+
+.ProductsList {
+    border-left: 1px solid #e3e1e1 ;
+    margin-left: 0px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Pagination {
+    margin: 0px 0px 20px 350px;
+}
+
+@media (max-width: 1399px) {
+    .FilterSlider {
+        width: 250px;
+    }
+
+}
+
+
+@media (max-width: 1199px) {
+    .FilterSlider {
+        width: 200px;
+    }
+    
+    .Pagination {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .SideFilters {
+        display: inline !important;
+    }
+
+    .ShowingResults {
+        display: none;
+    }
+
+    .FirstRow {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ItemsList {
+        display: none;
+    }
+
+    .RowTwoLeftSide {
+        display: none;
+    }
+    
+    .ProductsList{
+        border: none;
+        padding: 0px;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .Pagination {
+        margin-right: 400px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .ProductsList{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .Pagination {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 531px) {
+    .ProductsList{
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 505px) {
+    .SortIcon {
+        margin: auto;
+    }
+
+    .ProductsList {
+        grid-template-columns: repeat(1, auto);
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

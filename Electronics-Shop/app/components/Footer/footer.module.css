@@ -1,0 +1,108 @@
+.footer {
+    height: 370px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContent {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.logoContainer {
+    width: 200px;
+    height: 150px;
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.footer .logoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.socialSection .socialMedia {
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.socialContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #eef2f64f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialContainer:hover {
+    background-color: white;
+}
+
+.socialContainer:hover path {
+    color: var(--third);
+}
+
+.pages, .socialSection, .location {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    height: 230px;
+}
+
+.footerContent h2 {
+    position: relative;
+    width: fit-content;
+}
+
+.footerContent h2::after {
+    content: "";
+    width: 85%;
+    height: 4px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+}
+
+.location p {
+    font-size: large;
+}
+
+.footerContent ~ .line {
+    width: 75%;
+    height: 2px;
+}
+
+.footerContent ~ p {
+    color: white;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footerContent, .footer {
+        height: fit-content;
+    }
+    
+    .footerContent {
+        padding-top: 50px;
+    }
+}

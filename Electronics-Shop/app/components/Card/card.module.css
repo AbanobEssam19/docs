@@ -1,0 +1,122 @@
+.wholeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px transparent solid;
+  width: 250px;
+  height: 380px;
+  padding: 17px;
+  transition: .3s ease;
+}
+
+
+.wholeCard:hover {
+  border: 1px rgba(128, 128, 128, 0.143) solid;
+  border-radius: 20px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.cardImg {
+  position: relative;
+}
+
+.cardImg img {
+  width: 200px;
+  height: 200px;
+}
+
+.cardImg .discount {
+  position: absolute;
+  top: 3%;
+  border-radius: 20px;
+  background-color: var(--main);
+  padding: 2px 10px;
+  color: white;
+}
+
+.cardImg .wishList {
+  position: absolute;
+  border: 1px rgb(221, 219, 219) solid;
+  border-radius: 30px;
+  top: 10px;
+  right: -6px;
+  padding: 3px 0px;
+  background-color: #fcfbfb;
+}
+
+.cardImg .wishList:hover {
+  background-color: rgba(255, 114, 114, 0.272);
+}
+
+.cardImg .eye {
+  position: absolute;
+  border: 1px rgb(221, 219, 219) solid;
+  border-radius: 30px;
+  top: 50px;
+  right: -6px;
+  padding: 3px 0px;
+  background-color: #fcfbfb;
+  transform: translateX(25px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.wholeCard:hover .eye {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.cardImg .eye:hover {
+  background-color: rgba(128, 128, 128, 0.143);
+}
+
+.anchor {
+  width: 100%;
+  margin-top: 2px;
+  text-decoration: none;
+}
+
+.anchor .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.lowerPart {
+  width: 100%;
+  margin-top: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lowerPart .price {
+  position: relative;
+}
+
+.lowerPart .price p {
+  color: #ff6600;
+  font-size: 25px;
+  margin: 0;
+}
+
+.lowerPart .price span {
+  color: grey;
+  text-decoration: line-through;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 28px;
+}
+
+.shoppingCart {
+  border: 1px rgb(221, 219, 219) solid;
+  border-radius: 10px;
+  padding: 4px;
+  background-color: #fcfbfb;
+}
+
+.shoppingCart:hover {
+  background-color: rgba(128, 128, 128, 0.143);
+}

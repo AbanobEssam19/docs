@@ -1,0 +1,14 @@
+.container {
+    position: sticky;
+    top: 0;
+    right: 20px;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
+
+.alert {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}

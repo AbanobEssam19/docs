@@ -1,0 +1,39 @@
+.AccountDetails {
+    display: flex;
+    margin-top: 50px;
+    border-top: 1px solid #e3e1e1;
+    margin-bottom: 100px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.AccountDetails .form {
+    border-left: 1px solid #e3e1e1;
+    padding-left: 30px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative; 
+}
+
+.AccountDetails .form input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border-color: grey;
+    border: 1px #beb9b9 solid;
+    
+}
+
+.AccountDetails .form .sumbit {
+    width: 120px;
+    height: 40px;
+    border-color: transparent;
+    background-color: var(--main);
+    color: white;
+}
+
+@media (max-width: 991px) {
+
+}
